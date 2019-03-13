@@ -2,7 +2,7 @@ package src.ru.sbt.mipt.oop;
 
 import java.util.Collection;
 
-public class Room implements Actionable {
+public class Room {
     private Collection<Light> lights;
     private Collection<Door> doors;
     private String name;
@@ -23,11 +23,5 @@ public class Room implements Actionable {
 
     public String getName() {
         return name;
-    }
-
-    @Override
-    public void execute(Action action){
-        for(Light l : lights) action.Activate(l, this);
-        for(Door d : doors) action.Activate(d, this);
     }
 }
