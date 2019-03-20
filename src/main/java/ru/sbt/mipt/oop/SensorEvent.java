@@ -1,4 +1,4 @@
-package ru.sbt.mipt.oop;
+package src.ru.sbt.mipt.oop;
 
 public class SensorEvent {
     private final SensorEventType type;
